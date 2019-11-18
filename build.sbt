@@ -6,6 +6,8 @@ val commonSettings = Seq(
 val gatlingVersion = "3.3.1"
 val gatlingCore = "io.gatling" % "gatling-core" % gatlingVersion
 
+enablePlugins(JavaAppPackaging)
+
 val publishSettings = {
   import xerial.sbt.Sonatype._
   Seq(
